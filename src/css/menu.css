@@ -1,0 +1,130 @@
+.main-menu {
+  display: block;
+  height: 50px;
+  background-color: rgb(235, 235, 235);
+  z-index: 2;
+}
+
+.hamburger {
+  display: none;
+}
+
+.ham-bar {
+  background-color: black;
+  height: 2px;
+  width: 20px;
+  margin-bottom: 5px;
+}
+
+.menu_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav a {
+  padding: 14px 30px;
+  color: rgb(59, 59, 59);
+  display: flex;
+  flex-direction: row;
+}
+
+nav a:hover {
+  color: orange;
+  border-bottom: 3px solid orange;
+}
+
+nav a:hover div.menu_down_btn {
+  display: none;
+}
+
+nav a h6 {
+  margin: 3px 3px;
+  font-size: 10px;
+}
+
+nav a div.sub_menu {
+  position: absolute;
+  top: 110px;
+  left: 0px;
+  display: none;
+  background-color: rgb(236, 236, 236);
+  height: 300px;
+  width: 100%;
+  color: rgb(141, 141, 141);
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+nav a div h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a:hover div.sub_menu {
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .main-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 19px 18px;
+    z-index: 10;
+  }
+
+  nav a {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    width: 160px;
+  }
+
+  .hamburger div.ham-menu {
+    position: absolute;
+    top: 60px;
+    left: -1000%;
+    width: 400px;
+    height: 85vh;
+    background-color: rgb(218, 218, 218);
+    overflow: auto;
+  }
+
+  .hamburger:hover {
+    color: orange;
+  }
+
+  .hamburger:hover div.ham-menu {
+    display: block;
+    left: 0px;
+    transition: all 0.5s ease;
+    z-index: 5;
+  }
+
+  .menu_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  nav a div.menu_down_btn {
+    transform: rotate(270deg);
+  }
+
+  nav a div.sub_menu {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    display: none;
+    background-color: rgb(230, 230, 230);
+    height: 85vh;
+    width: 350px;
+    color: rgb(112, 112, 112);
+  }
+}

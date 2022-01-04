@@ -1,0 +1,86 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 400px;
+}
+
+.slider img {
+  width: 60vw;
+  height: 30vw;
+  object-fit: cover;
+}
+
+.slider .arr-left {
+  position: relative;
+  left: 45px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.slider .arr-right {
+  position: relative;
+  right: 45px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  z-index: 0;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.active-slide {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+@media screen and (min-width: 0px) {
+  .slider img {
+    height: 67vw;
+    width: 100vw;
+  }
+
+  .slider .arr-left,
+  .slider .arr-right {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .slider img {
+    height: 60vw;
+    width: 100vw;
+  }
+  .slider .arr-left,
+  .slider .arr-right {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .slider img {
+    height: 50vw;
+    width: 80vw;
+  }
+  .slider .arr-left,
+  .slider .arr-right {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .slider img {
+    height: 40vw;
+    width: 70vw;
+  }
+  .slider .arr-left,
+  .slider .arr-right {
+    font-size: 2.1rem;
+  }
+}

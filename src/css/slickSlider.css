@@ -1,0 +1,35 @@
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  background-color: orange;
+}
+
+.caro-slider {
+  margin: 19px;
+}
+
+.card {
+  height: 27vw;
+  margin: 15px;
+}
+
+.card-image img {
+  width: 17vw;
+  height: 20vw;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .caro-slider {
+    width: 70vw;
+    margin-top: 20px;
+  }
+
+  .card {
+    height: 90vw;
+  }
+
+  .card-image img {
+    height: 70vw;
+    width: 65vw;
+  }
+}

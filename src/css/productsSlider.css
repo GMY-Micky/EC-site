@@ -1,0 +1,73 @@
+.slider-container {
+  height: 30vw;
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.side-link {
+  flex: 20%;
+  height: 30vw;
+  text-align: center;
+}
+
+.side-link h3 {
+  position: relative;
+  top: 45%;
+  font-weight: bolder;
+  font-size: 1.5vmax;
+}
+
+.side-link .link .arrow {
+  font-weight: 700;
+  font-size: 0.8vmx;
+  margin-left: 8px;
+}
+
+.side-link .link {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  top: 46%;
+  font-weight: 900;
+  font-size: 0.8vmax;
+}
+
+.side-link .link:hover {
+  color: orange;
+}
+
+.slider-container .carousel {
+  flex: 80%;
+  height: 30vw;
+  width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+  .slider-container {
+    flex-direction: column;
+    height: auto;
+    width: 90vw;
+  }
+
+  .slider-container .side-link {
+    width: 90vw;
+    height: auto;
+  }
+  .slider-container .carousel {
+    width: 80vw;
+    height: 100vw;
+  }
+
+  .side-link h3 {
+    font-size: 2.5vmax;
+  }
+
+  .side-link .link,
+  .side-link .link .arrow {
+    font-size: 1.2vmax;
+  }
+}
