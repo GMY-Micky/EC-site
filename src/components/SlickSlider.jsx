@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../css/slickSlider.css";
-import data from "./SliderData";
+import slickMainPage from "./slickDataMainPage";
 import { BsArrowRight, BsArrowLeft, BsArrowLeftSquare } from "react-icons/bs";
 
 const LeftBtn = ({ className, onClick }) => {
@@ -34,7 +34,7 @@ const SlickSlider = () => {
     nextArrow: <RightBtn />,
     responsive: [
       {
-        breakpoint: 800,
+        breakpoint: 750,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -47,15 +47,15 @@ const SlickSlider = () => {
   return (
     <div className="caro-slider">
       <Slider {...settings}>
-        {data.map((image, index) => {
+        {slickMainPage.map((data, index) => {
           return (
             <div key={index} className="card">
               <div className="card-image">
-                <img src={image.url} alt="" />
+                <img src={data.image} alt="" />
               </div>
               <div className="card-details">
-                <div className="title"></div>
-                <div className="body"></div>
+                <div className="title">{data.name}</div>
+                <div className="body">{data.Price}</div>
               </div>
             </div>
           );

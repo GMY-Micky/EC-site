@@ -1,10 +1,10 @@
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
-  background-color: orange;
+  background-color: black;
 }
 
 .caro-slider {
-  margin: 19px;
+  margin: 25px;
 }
 
 .card {
@@ -18,7 +18,16 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 800px) {
+.card-details .title {
+  font-size: 1.4vmax;
+}
+
+.card-details .body {
+  font-size: 1.7vmax;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 750px) {
   .caro-slider {
     width: 70vw;
     margin-top: 20px;
@@ -26,10 +35,20 @@
 
   .card {
     height: 90vw;
+    display: flex;
   }
 
   .card-image img {
     height: 70vw;
     width: 65vw;
+  }
+
+  .card-details .title {
+    font-size: 2vmax;
+  }
+
+  .card-details .body {
+    font-size: 2.5vmax;
+    font-weight: bolder;
   }
 }
