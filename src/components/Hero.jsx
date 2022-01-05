@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "../css/hero.css";
 import data from "./SliderData";
-import { BsArrowRightSquare, BsArrowLeftSquare } from "react-icons/bs";
+import {
+  BsFillArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
@@ -21,7 +24,7 @@ const Hero = () => {
   return (
     <section className="slider">
       <div className="arr-left" onClick={moveLeft}>
-        <BsArrowLeftSquare />
+        <BsFillArrowLeftCircleFill />
       </div>
       {data.map((image, index) => {
         return (
@@ -34,7 +37,7 @@ const Hero = () => {
         );
       })}
       <div className="arr-right" onClick={moveRight}>
-        <BsArrowRightSquare />
+        <BsFillArrowRightCircleFill />
       </div>
     </section>
   );

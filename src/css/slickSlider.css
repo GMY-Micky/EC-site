@@ -9,21 +9,24 @@
 
 .card {
   height: 27vw;
-  margin: 15px;
 }
 
-.card-image img {
+.card img {
   width: 17vw;
   height: 20vw;
   object-fit: cover;
 }
 
+.card-details {
+  margin-top: 10px;
+}
+
 .card-details .title {
-  font-size: 1.4vmax;
+  font-size: 1.2vmax;
 }
 
 .card-details .body {
-  font-size: 1.7vmax;
+  font-size: 1.3vmax;
   font-weight: bolder;
 }
 
@@ -38,9 +41,13 @@
     display: flex;
   }
 
-  .card-image img {
-    height: 70vw;
-    width: 65vw;
+  .card img {
+    height: 75vw;
+    width: 71vw;
+  }
+
+  .card-details {
+    text-align: center;
   }
 
   .card-details .title {

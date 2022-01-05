@@ -1,0 +1,51 @@
+.gallery {
+  width: 100vw;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery-tag h1 {
+  background-color: black;
+  color: white;
+  width: 300px;
+  margin: 20px;
+  padding: 10px 20px;
+}
+
+.gallery-tag p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery-images {
+  width: 100vw;
+  height: 35vw;
+  overflow: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0 4px;
+}
+
+.row img {
+  margin: 5px;
+  height: 16vw;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 750px) {
+  .gallery-images {
+    height: 62vw;
+  }
+
+  .row img {
+    height: 28vw;
+  }
+}

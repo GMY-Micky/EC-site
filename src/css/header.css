@@ -5,8 +5,9 @@
   justify-content: space-around;
   align-items: center;
   z-index: 10;
-  min-width: 400px;
+  min-width: 350px;
   overflow: hidden;
+  width: 100vw;
 }
 
 .left-head {

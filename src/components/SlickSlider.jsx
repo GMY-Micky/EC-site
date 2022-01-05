@@ -27,8 +27,9 @@ const SlickSlider = () => {
     centerMode: true,
     infinite: true,
     centerPadding: "60px",
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
     speed: 500,
     prevArrow: <LeftBtn />,
     nextArrow: <RightBtn />,
@@ -50,9 +51,8 @@ const SlickSlider = () => {
         {slickMainPage.map((data, index) => {
           return (
             <div key={index} className="card">
-              <div className="card-image">
-                <img src={data.image} alt="" />
-              </div>
+              <img src={data.image} alt="" />
+
               <div className="card-details">
                 <div className="title">{data.name}</div>
                 <div className="body">{data.Price}</div>

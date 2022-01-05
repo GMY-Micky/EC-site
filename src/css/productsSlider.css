@@ -1,12 +1,13 @@
 .slider-container {
   height: 30vw;
-  width: 70vw;
+  width: 95vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
   overflow: hidden;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .side-link {
@@ -43,11 +44,13 @@
 
 .slider-container .carousel {
   flex: 80%;
-  height: 30vw;
+  height: 25vw;
   width: 80%;
+  margin-bottom: 60px;
+  margin-right: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
   .slider-container {
     flex-direction: column;
     height: auto;
@@ -59,12 +62,16 @@
     height: auto;
   }
   .slider-container .carousel {
-    width: 80vw;
-    height: 100vw;
+    width: 85vw;
+    margin: 0px;
   }
 
   .side-link h3 {
     font-size: 2.5vmax;
+  }
+
+  .side-link {
+    margin-top: 20px;
   }
 
   .side-link .link,

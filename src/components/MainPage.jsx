@@ -3,7 +3,8 @@ import Hero from "./Hero";
 import ProductLinks from "./ProductLinks";
 import ProductsSlider from "./ProductsSlider";
 import "../css/mainPage.css";
-import SlickSlider from "./SlickSlider";
+import ImageGallery from "./ImageGallery";
+import Footer from "../components/Footer";
 
 const MainPage = () => {
   return (
@@ -11,6 +12,8 @@ const MainPage = () => {
       <Hero />
       <ProductLinks />
       <ProductsSlider />
+      <ImageGallery />
+      <Footer />
     </div>
   );
 };

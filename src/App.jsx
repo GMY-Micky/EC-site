@@ -4,6 +4,7 @@ import MainHeader from "./components/MainHeader";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainPage from "./components/MainPage";
 import ErrorPage from "./components/ErrorPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (

@@ -4,11 +4,12 @@
   justify-content: center;
   align-items: center;
   min-width: 400px;
+  width: 100vw;
 }
 
 .slider img {
-  width: 60vw;
-  height: 30vw;
+  width: 100vw;
+  height: 15vw;
   object-fit: cover;
 }
 
@@ -23,7 +24,7 @@
 
 .slider .arr-right {
   position: relative;
-  right: 45px;
+  right: 60px;
   color: white;
   font-size: 2.5rem;
   font-weight: bold;
@@ -42,8 +43,7 @@
 
 @media screen and (min-width: 0px) {
   .slider img {
-    height: 67vw;
-    width: 100vw;
+    height: 50vw;
   }
 
   .slider .arr-left,
@@ -54,8 +54,7 @@
 
 @media screen and (min-width: 500px) {
   .slider img {
-    height: 60vw;
-    width: 100vw;
+    height: 40vw;
   }
   .slider .arr-left,
   .slider .arr-right {
@@ -65,8 +64,7 @@
 
 @media screen and (min-width: 767px) {
   .slider img {
-    height: 50vw;
-    width: 80vw;
+    height: 30vw;
   }
   .slider .arr-left,
   .slider .arr-right {
@@ -76,8 +74,7 @@
 
 @media screen and (min-width: 900px) {
   .slider img {
-    height: 40vw;
-    width: 70vw;
+    height: 20vw;
   }
   .slider .arr-left,
   .slider .arr-right {
