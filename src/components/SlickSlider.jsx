@@ -4,20 +4,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../css/slickSlider.css";
 import slickMainPage from "./slickDataMainPage";
-import { BsArrowRight, BsArrowLeft, BsArrowLeftSquare } from "react-icons/bs";
 
-const LeftBtn = ({ className, onClick }) => {
+const LeftBtn = ({ onClick }) => {
   return (
-    <div className={className} onClick={onClick}>
-      <BsArrowLeft />
+    <div className="slick-arr-left" onClick={onClick}>
+      <i class="fas fa-chevron-left"></i>
     </div>
   );
 };
 
-const RightBtn = ({ className, onClick }) => {
+const RightBtn = ({ onClick }) => {
   return (
-    <div className={className} onClick={onClick}>
-      <BsArrowRight />
+    <div className="slick-arr-right" onClick={onClick}>
+      <i class="fas fa-chevron-right"></i>
     </div>
   );
 };

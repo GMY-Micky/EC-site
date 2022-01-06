@@ -13,7 +13,6 @@ const MainPage = () => {
       <ProductLinks />
       <ProductsSlider />
       <ImageGallery />
-      <Footer />
     </div>
   );
 };

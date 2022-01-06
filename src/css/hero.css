@@ -9,7 +9,7 @@
 
 .slider img {
   width: 100vw;
-  height: 15vw;
+  height: 30vw;
   object-fit: cover;
 }
 
@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 500px) {
   .slider img {
-    height: 40vw;
+    height: 60vw;
   }
   .slider .arr-left,
   .slider .arr-right {
@@ -64,7 +64,7 @@
 
 @media screen and (min-width: 767px) {
   .slider img {
-    height: 30vw;
+    height: 50vw;
   }
   .slider .arr-left,
   .slider .arr-right {
@@ -74,7 +74,7 @@
 
 @media screen and (min-width: 900px) {
   .slider img {
-    height: 20vw;
+    height: 40vw;
   }
   .slider .arr-left,
   .slider .arr-right {

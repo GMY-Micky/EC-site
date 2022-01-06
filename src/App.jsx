@@ -15,6 +15,7 @@ function App() {
           <Route exact path="/" element={<MainPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
