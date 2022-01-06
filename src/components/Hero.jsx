@@ -32,7 +32,7 @@ const Hero = () => {
             key={index}
             className={current === index ? "active-slide" : "slide"}
           >
-            {index === current && <img src={image.url} alt="none" />}
+            {index === current && <img src={image} alt="none" />}
           </div>
         );
       })}

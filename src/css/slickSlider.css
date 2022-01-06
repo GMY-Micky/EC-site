@@ -2,9 +2,33 @@
   margin: 25px;
 }
 
-.slick-arr-left .card img {
-  width: 20vw;
+.slick-arr {
+  position: absolute;
+  cursor: pointer;
+  font-size: 2.5rem;
+  z-index: 10;
+  background-color: white;
+  height: 60px;
+  width: 40px;
+}
+
+.slick-arr.left {
+  left: 0;
+  top: 50%;
+}
+
+.slick-arr.right {
+  right: 0;
+  top: 50%;
+}
+
+.card:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.card img {
   height: 20vw;
+  width: 15vw;
   object-fit: cover;
 }
 
@@ -18,13 +42,17 @@
 
 .card-details .body {
   font-size: 1.3vmax;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 750px) {
   .caro-slider {
     width: 70vw;
     margin-top: 20px;
+  }
+
+  .card {
+    height: 90vw;
   }
 
   .card img {

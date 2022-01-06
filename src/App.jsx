@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainPage from "./components/MainPage";
 import ErrorPage from "./components/ErrorPage";
 import Footer from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
