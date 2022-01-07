@@ -23,6 +23,7 @@ const RightBtn = ({ onClick }) => {
 
 const SlickSlider = () => {
   const settings = {
+    centerMode: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -46,12 +47,14 @@ const SlickSlider = () => {
       <Slider {...settings}>
         {slickMainPage.map((data, index) => {
           return (
-            <div key={index} className="card">
-              <img src={data} alt="" />
+            <div>
+              <div key={index} className="card">
+                <img src={data} alt="" />
 
-              <div className="card-details">
-                <div className="title">{data.name}</div>
-                <div className="body">{data.Price}</div>
+                <div className="card-details">
+                  <div className="title">{data.name}</div>
+                  <div className="body">{data.Price}</div>
+                </div>
               </div>
             </div>
           );

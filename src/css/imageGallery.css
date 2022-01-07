@@ -26,7 +26,6 @@
   width: 100vw;
   height: 35vw;
   overflow-x: scroll;
-  -ms-overflow-style: none;
 }
 
 .gallery-images::-webkit-scrollbar {
@@ -48,6 +47,7 @@
 .row img {
   margin: 5px;
   height: 16vw;
+  width: auto;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
