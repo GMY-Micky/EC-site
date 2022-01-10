@@ -8,7 +8,7 @@ import slickMainPage from "./slickDataMainPage";
 const LeftBtn = ({ onClick }) => {
   return (
     <div className="slick-arr left" onClick={onClick}>
-      <i class="fas fa-chevron-left"></i>
+      <i className="fas fa-chevron-left"></i>
     </div>
   );
 };
@@ -16,7 +16,7 @@ const LeftBtn = ({ onClick }) => {
 const RightBtn = ({ onClick }) => {
   return (
     <div className="slick-arr right" onClick={onClick}>
-      <i class="fas fa-chevron-right"></i>
+      <i className="fas fa-chevron-right"></i>
     </div>
   );
 };
@@ -37,6 +37,7 @@ const SlickSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: false,
         },
       },
     ],
@@ -47,8 +48,8 @@ const SlickSlider = () => {
       <Slider {...settings}>
         {slickMainPage.map((data, index) => {
           return (
-            <div>
-              <div key={index} className="card">
+            <div key={index}>
+              <div className="card">
                 <img src={data} alt="" />
 
                 <div className="card-details">

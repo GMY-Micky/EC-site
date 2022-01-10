@@ -4,6 +4,8 @@
   background-color: rgb(235, 235, 235);
   z-index: 2;
   border-bottom: 1px solid rgb(82, 82, 82);
+  position: sticky;
+  top: 0;
 }
 
 .hamburger {
@@ -46,7 +48,7 @@ nav a h6 {
 
 nav a div.sub_menu {
   position: absolute;
-  top: 110px;
+  top: 50px;
   left: 0px;
   display: none;
   background-color: rgb(223, 223, 223);
@@ -90,78 +92,16 @@ nav a:hover div.sub_menu {
 .level-3 {
   line-height: 30px;
   list-style: none;
-  color: rgb(90, 89, 89);
+  color: rgb(99, 99, 99);
 }
 
 .level-3.main {
-  font-weight: bold;
-  color: rgb(68, 68, 68);
+  font-weight: 900;
+  color: rgb(36, 36, 36);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
   .main-menu {
     display: none;
-  }
-
-  .hamburger {
-    display: block;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    padding: 19px 18px;
-    z-index: 10;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  .hamburger::-webkit-scrollbar {
-    display: none;
-  }
-
-  nav a {
-    border-bottom: 1px solid rgb(216, 216, 216);
-    width: 160px;
-  }
-
-  .hamburger div.ham-menu {
-    position: absolute;
-    top: 60px;
-    left: -1000%;
-    width: 400px;
-    height: 85vh;
-    background-color: rgb(218, 218, 218);
-    overflow: auto;
-  }
-
-  .hamburger:hover {
-    color: orange;
-  }
-
-  .hamburger:hover div.ham-menu {
-    display: block;
-    left: 0px;
-    transition: all 0.5s ease;
-    z-index: 5;
-  }
-
-  .menu_items {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-
-  nav a div.menu_down_btn {
-    transform: rotate(270deg);
-  }
-
-  nav a div.sub_menu {
-    position: absolute;
-    top: 0px;
-    left: 150px;
-    display: none;
-    background-color: rgb(230, 230, 230);
-    height: 85vh;
-    width: 350px;
-    color: rgb(112, 112, 112);
   }
 }

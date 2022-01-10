@@ -11,13 +11,13 @@
 .gallery-tag h1 {
   background-color: black;
   color: white;
-  width: 300px;
   margin: 20px;
+  font-size: 1.4rem;
   padding: 10px 20px;
 }
 
 .gallery-tag p {
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-bottom: 20px;
   color: rgb(97, 97, 97);
 }
@@ -50,6 +50,11 @@
   width: auto;
 }
 
+.gallery-text {
+  width: 80vw;
+  margin: 20px 0px;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 750px) {
   .gallery-images {
@@ -58,5 +63,10 @@
 
   .row img {
     height: 42vw;
+  }
+
+  .gallery-text {
+    width: 90vw;
+    margin: 30px 0px;
   }
 }

@@ -5,6 +5,14 @@
   padding: 20px;
 }
 
+.footer-logo {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .footer-top {
   display: flex;
   flex-wrap: wrap;
@@ -12,11 +20,21 @@
   justify-content: space-around;
   margin: 30px 0px;
 }
+
 .footer-links-head {
   list-style: none;
   font-weight: bold;
   font-size: large;
   margin-bottom: 10px;
+}
+
+.footer-links-head:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 60px;
+  background-color: black;
+  margin-top: 5px;
 }
 
 .footer-links ul {
@@ -27,11 +45,14 @@
   list-style: none;
   font-size: small;
   line-height: 2rem;
-  text-decoration: none;
-  color: rgb(99, 99, 99);
 }
 
-.footer-link:hover {
+.link {
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+}
+
+.link:hover {
   color: black;
 }
 
@@ -40,14 +61,6 @@
   padding: 20px;
   display: flex;
   justify-content: center;
-}
-
-.footer-logo {
-  text-decoration: none;
-  color: black;
-  font-size: 40px;
-  text-align: center;
-  font-weight: bold;
 }
 
 .social-icon {

@@ -66,6 +66,17 @@ const ImageGallery = () => {
           </div>
         </div>
       </div>
+      <div>
+        <p className="gallery-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum
+          consequuntur laudantium soluta reiciendis, sunt temporibus animi
+          corrupti vitae atque, similique voluptatibus unde placeat, dolor eos
+          id asperiores? Dolor, sit. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Autem in quasi optio accusamus temporibus doloribus
+          dolorem numquam aperiam fugit sed quis eaque quae porro, natus
+          aspernatur ut exercitationem, placeat praesentium.
+        </p>
+      </div>
     </div>
   );
 };

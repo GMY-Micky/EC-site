@@ -27,7 +27,7 @@
 }
 
 .content h2 {
-  font-size: 1.5vmax;
+  font-size: 22min;
 }
 
 .watch-link {
@@ -38,7 +38,7 @@
 .bag-link,
 .denim-link {
   text-decoration: none;
-  font-size: 0.6vmax;
+  font-size: 1.5vmin;
   color: white;
   font-weight: 100;
   border-bottom: 1px solid white;
