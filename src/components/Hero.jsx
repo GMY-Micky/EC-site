@@ -27,9 +27,6 @@ const Hero = () => {
         <BsFillArrowLeftCircleFill />
       </div>
 
-      <div className="arr-right" onClick={moveRight}>
-        <BsFillArrowRightCircleFill />
-      </div>
       {data.map((image, index) => {
         return (
           <div
@@ -40,6 +37,9 @@ const Hero = () => {
           </div>
         );
       })}
+      <div className="arr-right" onClick={moveRight}>
+        <BsFillArrowRightCircleFill />
+      </div>
     </section>
   );
 };
