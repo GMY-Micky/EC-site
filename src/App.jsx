@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainPage from "./components/MainPage";
 import ErrorPage from "./components/ErrorPage";
 import Footer from "./components/Footer";
+import SignUp from "./components/SignUp";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<MainPage />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="/sign-up" element={<SignUp />} />
         </Routes>
         <Footer />
       </Router>
