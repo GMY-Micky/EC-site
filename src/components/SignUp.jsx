@@ -2,20 +2,56 @@ import React, { useState } from "react";
 import "../css/signUp.css";
 
 const SignUp = () => {
-  const [firstName, setFirstName] = useState();
-  const [lastName, setLastName] = useState();
-  const [email, setEmail] = useState();
-  const [confirmEmail, setConfirmEmail] = useState();
-  const [password, setPassword] = useState();
-  const [confirmPassword, setConfirmPassword] = useState();
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [confirmEmail, setConfirmEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [notEqual, setNotEqual] = useState(false);
+  const [warning, setWarning] = useState(false);
+  const [disable, setDisable] = useState(false);
 
   const submitHandle = (e) => {
     e.preventDefault();
+
+    if (
+      firstName &&
+      lastName &&
+      email &&
+      confirmEmail &&
+      password &&
+      confirmPassword
+    ) {
+      if (email != confirmEmail || password != confirmPassword) {
+        setNotEqual(true);
+        if (warning) setWarning(false);
+      } else {
+        const data = {
+          firstName,
+          lastName,
+          email,
+          confirmEmail,
+          password,
+          confirmPassword,
+        };
+        localStorage.clear();
+        localStorage.setItem("Data", JSON.stringify(data));
+        if (warning) setWarning(false);
+        if (notEqual) setNotEqual(false);
+        setDisable(true);
+      }
+    } else {
+      setWarning(true);
+      if (notEqual) setNotEqual(false);
+    }
   };
 
   return (
     <div className="sign-up-form" style={{ marginTop: "60px" }}>
       <h1>Create Account</h1>
+      {warning && <p className="warning">Please Fill the form completely</p>}
+      {notEqual && <p className="not-equal">Email or Passwords are not same</p>}
       <div className="form">
         <form onSubmit={submitHandle}>
           <br />
@@ -44,7 +80,6 @@ const SignUp = () => {
           <br />
           <br />
           <h3>Login Information</h3>
-          <br />
           <br />
           <label htmlFor="Email">
             <span>Email</span>
@@ -90,7 +125,12 @@ const SignUp = () => {
           </label>
           <br />
           <br />
-          <input className="submit-btn" type="submit" value="Sign Up" />
+          <input
+            className="submit-btn"
+            type="submit"
+            value="Sign Up"
+            disabled={disable}
+          />
         </form>
       </div>
     </div>
