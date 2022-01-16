@@ -79,6 +79,7 @@ const SignUp = () => {
           </label>
           <br />
           <br />
+          <br />
           <h3>Login Information</h3>
           <br />
           <label htmlFor="Email">
