@@ -42,7 +42,6 @@
   margin-left: 5px;
   background-color: rgb(226, 226, 226);
   color: rgb(77, 77, 77);
-  width: 150px;
   transition: width 1s ease-out;
   padding: 10px 3px;
 }

@@ -28,7 +28,6 @@
 .slider .arr-right {
   position: relative;
   right: 90px;
-
   top: 20px;
   color: white;
   font-size: 2.5rem;
@@ -44,7 +43,7 @@
 
 .active-slide {
   opacity: 1;
-  transition-duration: 1s;
+  transition-duration: 1s ease;
 }
 
 @media screen and (min-width: 0px) {
