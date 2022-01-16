@@ -45,14 +45,12 @@ const header = () => {
         </Link>
       </div>
       <div className="header-icons">
-        <i className="fas fa-shopping-cart"></i>
-        <i className="fas fa-user-circle"></i>
+        <Link to="/sign-in" className="sign-in-link">
+          <i className="fas fa-user-circle"></i>
+        </Link>
       </div>
       <div className="header-links">
-        <Link to="/" className="store-link">
-          store
-        </Link>
-        <Link to="/" className="sign-in-link">
+        <Link to="/sign-in" className="sign-in-link">
           sign in
         </Link>
       </div>

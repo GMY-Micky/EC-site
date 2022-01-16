@@ -64,7 +64,7 @@ nav a div.sub_menu {
   align-items: center;
   z-index: 3;
   transform: scaleY(0);
-  transition: transform 350ms ease;
+  transition: transform 250ms ease;
   transform-origin: top;
 }
 
