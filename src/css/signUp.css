@@ -13,13 +13,13 @@
   padding: 5px;
 }
 
-h1 {
+.sign-up-page-lable {
   font-weight: 900;
   font-size: 2.5rem;
   text-align: center;
 }
 
-h1::after {
+.sign-up-page-lable::after {
   content: "";
   display: block;
   height: 2px;
@@ -27,7 +27,7 @@ h1::after {
   background-color: black;
 }
 
-span {
+.input-lable {
   font-size: 0.9rem;
   font-weight: 600;
 }

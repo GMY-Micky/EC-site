@@ -6,6 +6,7 @@ import MainPage from "./components/MainPage";
 import ErrorPage from "./components/ErrorPage";
 import Footer from "./components/Footer";
 import SignUp from "./components/SignUp";
+import SignIn from "./components/SignIn";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/" element={<MainPage />} />
           <Route path="*" element={<ErrorPage />} />
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/sign-in" element={<SignIn />} />
         </Routes>
         <Footer />
       </Router>

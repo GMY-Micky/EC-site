@@ -49,7 +49,7 @@ const SignUp = () => {
 
   return (
     <div className="sign-up-form" style={{ marginTop: "60px" }}>
-      <h1>Create Account</h1>
+      <h1 className="sign-up-page-lable">Create Account</h1>
       {warning && <p className="warning">Please Fill the form completely</p>}
       {notEqual && <p className="not-equal">Email or Passwords are not same</p>}
       <div className="form">
@@ -58,7 +58,7 @@ const SignUp = () => {
           <br /> <h3>Name</h3>
           <br />
           <label htmlFor="First Name">
-            <span>First Name</span>
+            <span className="input-lable">First Name</span>
             <br />
             <input
               type="text"
@@ -69,7 +69,7 @@ const SignUp = () => {
           <br />
           <br />
           <label htmlFor="Last Name">
-            <span>Last Name</span>
+            <span className="input-lable">Last Name</span>
             <br />
             <input
               type="text"
@@ -83,7 +83,7 @@ const SignUp = () => {
           <h3>Login Information</h3>
           <br />
           <label htmlFor="Email">
-            <span>Email</span>
+            <span className="input-lable">Email</span>
             <br />
             <input
               type="email"
@@ -94,7 +94,7 @@ const SignUp = () => {
           <br />
           <br />
           <label htmlFor="confirm email">
-            <span>Confirm Email</span>
+            <span className="input-lable">Confirm Email</span>
             <br />
             <input
               type="email"
@@ -105,7 +105,7 @@ const SignUp = () => {
           <br />
           <br />
           <label htmlFor="password">
-            <span>Password</span>
+            <span className="input-lable">Password</span>
             <br />
             <input
               type="password"
@@ -116,7 +116,7 @@ const SignUp = () => {
           <br />
           <br />
           <label htmlFor="password">
-            <span>Confirm Password</span>
+            <span className="input-lable">Confirm Password</span>
             <br />
             <input
               type="password"
