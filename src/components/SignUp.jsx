@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/signUp.css";
 
 const SignUp = () => {
@@ -11,6 +12,8 @@ const SignUp = () => {
   const [notEqual, setNotEqual] = useState(false);
   const [warning, setWarning] = useState(false);
   const [disable, setDisable] = useState(false);
+
+  const navigate = useNavigate();
 
   const submitHandle = (e) => {
     e.preventDefault();
@@ -40,6 +43,7 @@ const SignUp = () => {
         if (warning) setWarning(false);
         if (notEqual) setNotEqual(false);
         setDisable(true);
+        navigate("/sign-in");
       }
     } else {
       setWarning(true);
