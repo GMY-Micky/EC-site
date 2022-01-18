@@ -45,7 +45,7 @@ const header = () => {
         </Link>
       </div>
       <div className="header-icons">
-        <Link to="/sign-in" className="sign-in-link">
+        <Link to="/sign-in" className="sign-in-logo">
           <i className="fas fa-user-circle"></i>
         </Link>
       </div>

@@ -15,7 +15,6 @@
 
 .sign-in-form input {
   width: 400px;
-  max-width: 90vw;
   height: 40px;
   padding: 5px;
 }
@@ -43,7 +42,6 @@
 
 .sign-in-btn {
   width: 400px;
-  max-width: 90vw;
   font-size: 1.1rem;
   font-weight: 600;
   color: white;
@@ -80,5 +78,17 @@
 @media screen and (max-width: 750px) {
   .form {
     flex-direction: column;
+  }
+
+  .sign-in-form input {
+    width: 100%;
+  }
+
+  .form-left {
+    margin: 10px 15px;
+  }
+
+  .sign-in-btn {
+    width: 100%;
   }
 }

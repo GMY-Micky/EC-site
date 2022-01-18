@@ -21,6 +21,7 @@
   padding: 3px;
   padding: 10px;
   background-color: rgb(238, 238, 238);
+  cursor: pointer;
 }
 
 .search-btn {
@@ -83,6 +84,10 @@
   color: orange;
   transition: color 0.7s, background-color 0.7s;
   border: none;
+}
+
+.sign-in-logo {
+  color: black;
 }
 
 @media screen and (max-width: 750px) {
